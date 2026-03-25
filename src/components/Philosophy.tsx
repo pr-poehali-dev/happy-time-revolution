@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Качественное образование",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Мы обеспечиваем высокий уровень преподавания по всем предметам. Наши учителя — профессионалы с многолетним опытом, которые вдохновляют детей на учёбу и открытия.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Всестороннее развитие",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Помимо учёбы, школа предлагает широкий выбор кружков, секций и творческих объединений. Мы верим, что каждый ребёнок талантлив по-своему.",
   },
   {
-    title: "Естественная динамика",
+    title: "Безопасная среда",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Школа — место, где каждый ученик чувствует себя защищённым и услышанным. Мы создаём атмосферу уважения, доверия и взаимной поддержки.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Партнёрство с семьёй",
+    description: "Тесное взаимодействие с родителями — залог успеха каждого ребёнка. Мы открыты для диалога и работаем в одной команде.",
   },
 ]
 
@@ -53,17 +53,17 @@ export function Philosophy() {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О нашей школе</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Школа с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>характером</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
+                alt="Школьное здание"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
@@ -72,7 +72,7 @@ export function Philosophy() {
           {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Наша школа — это место, где знания встречаются с воспитанием. Мы готовим не только грамотных специалистов, но и ответственных граждан своей страны.
             </p>
 
             {philosophyItems.map((item, index) => (

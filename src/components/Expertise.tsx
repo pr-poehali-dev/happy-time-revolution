@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { BookOpen, FlaskConical, Music, Trophy } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Общеобразовательные классы",
+    description: "Программа соответствует ФГОС. Углублённое изучение математики, русского языка, литературы и естественных наук для подготовки к ОГЭ и ЕГЭ.",
+    icon: BookOpen,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Естественные науки",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Современно оборудованные лаборатории химии, физики и биологии. Практические опыты и исследовательские проекты формируют научное мышление с ранних лет.",
+    icon: FlaskConical,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Творчество и искусство",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Художественная студия, театральный кружок, хор и музыкальные занятия. Развиваем творческий потенциал каждого ребёнка в атмосфере вдохновения.",
+    icon: Music,
   },
   {
-    title: "Градостроительство",
+    title: "Спорт и здоровье",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Спортивные секции, олимпиады и соревнования районного и городского уровня. Активное и здоровое детство — наш приоритет.",
+    icon: Trophy,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Направления</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Образование</HighlightedText>, проверенное
             <br />
-            практикой
+            временем
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Каждое направление выстроено так, чтобы дать ребёнку максимум возможностей для роста — академического, творческого и личностного.
           </p>
         </div>
 
